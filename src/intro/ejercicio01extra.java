@@ -27,6 +27,7 @@ public class ejercicio01extra {
        horas = (minutos % 1440 )/60;
        
         System.out.println("El equivalente es :" + dias + " dias " + horas + " Hs ") ;
+        System.out.println("");
        
        
         

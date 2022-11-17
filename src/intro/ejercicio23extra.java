@@ -28,6 +28,7 @@ public class ejercicio23extra {
     Scanner leer = new Scanner(System.in);
     
     String [][] matriz = new String [20][20];
+    
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
                 matriz[i][j]="*";
@@ -35,7 +36,7 @@ public class ejercicio23extra {
             
         }
     int cant =0;
-        while (cant<10){
+        while (cant<5){
             System.out.print("Ingresa uan palabra de 3 a 5 caracteres: ");
             String palabra=leer.nextLine();
             if(palabra.length()<6 && palabra.length()>2){
@@ -48,6 +49,7 @@ public class ejercicio23extra {
             for (int j = 0; j < 20; j++) {
                 if(matriz[i][j].equals("*")){
                     matriz[i][j]=String.valueOf((int)(Math.random()*10));
+                    
                 }
                 System.out.print(matriz[i][j]+" ");    
                  }
